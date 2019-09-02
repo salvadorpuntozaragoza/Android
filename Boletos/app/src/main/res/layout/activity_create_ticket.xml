@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundMain"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".CreateTicketActivity">
+
+    <EditText
+        android:id="@+id/textRuta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_ruta"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/textPrecio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_precio"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/textNumero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_boleto"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/guardarBoleto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/mainButtons"
+        android:textColor="@color/whiteText"
+        android:layout_gravity="end"
+        android:onClick="onSaveTicket"
+        android:text="@string/guardar_boleto" />
+
+</LinearLayout>

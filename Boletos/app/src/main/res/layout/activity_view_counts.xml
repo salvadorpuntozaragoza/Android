@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundMain"
+    android:orientation="vertical"
+    tools:context=".ViewCountsActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:weightSum="4">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fechaInicio"
+            android:layout_weight="1"/>
+
+
+        <Spinner
+            android:id="@+id/startMonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/meses"
+            android:layout_weight="1"/>
+
+        <Spinner
+            android:id="@+id/startYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/anios"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onDisplayCount"
+        android:gravity="center"
+        android:background="@color/mainButtons"
+        android:textColor="@color/whiteText"
+        android:layout_gravity="center"
+        android:text="@string/calcular"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$"/>
+
+        <TextView
+            android:id="@+id/textCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
